@@ -18,9 +18,15 @@ public class FirstNonRepeatedCharacterTest {
     }
 
     @Test
-    public void findBlah() {
-        Character character = FirstNonRepeatedCharacter.findFirstNonRepeatedCharInStringImproved("teeter");
+    public void findFirstNonRepeatedCharInStringImproved() {
+        Character character = FirstNonRepeatedCharacter.findFirstNonRepeatedCharInString("stress");
+        assertThat(character).isEqualTo('t');
+
+        character = FirstNonRepeatedCharacter.findFirstNonRepeatedCharInStringImproved("teeter");
         assertThat(character).isEqualTo('r');
+
+        character = FirstNonRepeatedCharacter.findFirstNonRepeatedCharInString("aftaftftftftrrrrvvvvvvnnnnnikgzghgh");
+        assertThat(character).isEqualTo('i');
     }
 
 }

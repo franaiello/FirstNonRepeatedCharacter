@@ -23,7 +23,6 @@ public class FirstNonRepeatedCharacter {
             if (map.get(c) == null) {
                 map.put(c, 1);
             } else {
-                //Integer count = map.get(c);
                 map.put(c, map.get(c)+1);
             }
         }
